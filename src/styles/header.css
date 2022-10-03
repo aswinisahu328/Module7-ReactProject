@@ -1,0 +1,112 @@
+header{
+    width: inherit;
+    left:40px;
+    top: 0;
+    position: absolute;
+    box-sizing: border-box;
+}
+nav{
+    line-height: 2rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10%;
+}
+
+.div1 a{
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div22menu{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 1rem;
+    /* margin: 0 2rem; */
+    position: relative;
+}
+.div22menu li {
+    list-style: none;
+    cursor: pointer;
+    /* position: relative; */
+}
+.div22menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+.div22menu li a {
+    text-decoration: none;
+}
+.dropdown {
+    position: absolute;
+    top: 2rem;
+    left: 7rem;
+    background: whitesmoke;
+    box-shadow: 0 0 6px gray;
+    border-radius: 6px;
+    /* width: 12rem; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.2rem; */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s opacity ease-in-out;
+}
+.dropdown li {
+    /* padding: 0.2rem; */
+    border-radius: 8px;
+    transition: 0.4s ease-in-out;
+}
+.dropdown li:hover{
+    background: red;
+    color: white;
+}
+
+.div22icon{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    /* gap: 2rem; */
+}
+.div22icon li {
+    list-style: none;
+    cursor: pointer;
+}
+.div22icon li button {
+    background: inherit;
+    border: inherit;
+    padding: 15px;
+}
+.div22icon li button a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    /* identical to box height, or 133% */
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    /* text-color */
+    color: #252B42;
+}
+h5{
+    font-size: 14px;
+    font-weight: 700;
+    /* identical to box height, or 171% */
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
